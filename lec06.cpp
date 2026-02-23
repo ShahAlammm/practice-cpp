@@ -34,15 +34,19 @@ int main() {
 
     while(v1 < 3)
     {
-        //v2 = 0;
+    
         cout << "v1: " << v1 << "\n";
 
+        v2 = 0;
+        
         while(v2 < 2)
         {
             cout << "  v2: " << v2 << "\n";
-            v2 = v2 + 1;
+           // v2 = v2 + 1;
+            v2 += v1;
         }
-        v1 = v1 + 1;
+        //v1 = v1 + 1;
+        v1 += 3;
     }
     cout << "finished" << endl;
 
