@@ -8,7 +8,8 @@ int main() {
     int a[3];
 
 
-    for (i = 0; i < 8; i++) {
+    for (i = 0; i < 1048576; i++) {
+
         cout << "\na[" << i << "]: "<< a[i] << endl;
        
     }
