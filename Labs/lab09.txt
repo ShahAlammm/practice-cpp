@@ -1,0 +1,19 @@
+Name: Shah ALam;
+Section: 12;
+Lab: 09;
+Date: 31 Mar 2026;
+
+| Variable | My guess | Actual | Why (if different from my guess) |
+|----------|----------|--------|-------------------------------------|
+| x        | 99       | 99     | |
+| y        | 101      | 101    | |
+| a[0]     | 102      | 102    | |
+| a[1]     | 1        | 8      | I thought p = a then p++ points to a[1], but I forgot *p = 8 actually changes it — I assumed p was just moving, not writing. |
+| a[2]     | 8        | 11     | I mixed up the order: I thought p went from a[1] to a[2] and wrote 11 first, but actually a[2] gets 11 after a[3] gets 12. |
+| a[3]     | 12       | 12     | |
+| a[4]     | 456      | 456    | |
+
+Notes:
+=>  I was confused by pointer moves — I thought p++ and p-- just move, but *p = value changes the array element.
+=>  In func, I forgot y is passed by reference, so I originally guessed y stays 55, but after running I see it changes.
+=>  In func2, I didn't realize arrays are passed by pointer until I saw a[4] become 456.
